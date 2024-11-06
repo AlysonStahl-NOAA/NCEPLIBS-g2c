@@ -177,7 +177,6 @@ g2c_find_entry(char *desc, G2C_CODE_TABLE_T *table)
     return NULL;
 }
 
-
 /** Implementation of strsep for code portability.
  * Extracts first token in string given a delimiter.
  *
