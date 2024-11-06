@@ -189,7 +189,8 @@ g2c_find_entry(char *desc, G2C_CODE_TABLE_T *table)
  *
  * @return a pointer to the original value of stringp
  */
-char* g2c_csv_strsep(char **stringp, const char *delim)
+char *
+g2c_csv_strsep(char **stringp, const char *delim)
 {
     char *rv = *stringp;
     if (rv)
