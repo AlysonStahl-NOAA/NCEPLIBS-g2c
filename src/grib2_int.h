@@ -336,7 +336,7 @@ void misspack(float *fld, g2int ndpts, g2int idrsnum, g2int *idrstmpl,
 void cmplxpack(float *fld, g2int ndpts, g2int idrsnum, g2int *idrstmpl,
                unsigned char *cpack, g2int *lcpack);
 g2int getpoly(unsigned char *csec3, g2int *jj, g2int *kk, g2int *mm);
-void specpack(float *fld, g2int ndpts, g2int JJ, g2int KK, g2int MM,
+void specpack(float *fld, g2int ndpts, g2int JJ, g2int KK, g2intu MM,
               g2int *idrstmpl, unsigned char *cpack, g2int *lcpack);
 g2int specunpack(unsigned char *cpack, g2int *idrstmpl, g2int ndpts, g2int JJ,
                  g2int KK, g2int MM, float *fld);

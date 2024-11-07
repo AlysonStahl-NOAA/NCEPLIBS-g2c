@@ -24,7 +24,8 @@ main()
         unsigned char cpack[PACKED_LEN];
         g2int lcpack;
         g2int idrstmpl[10] = {0, 1, 1, 16, 0, 0, 0, 0, 2, 1};
-        g2int JJ = 1, KK = 1, MM = 1;
+        g2int JJ = 1, KK = 1;
+        g2intu MM = 1;
         int i;
 
         printf("Packing the data...");

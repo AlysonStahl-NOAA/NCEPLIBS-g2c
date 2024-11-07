@@ -30,7 +30,7 @@
  * @author Stephen Gilbert @date 2002-12-19
  */
 void
-specpack(float *fld, g2int ndpts, g2int JJ, g2int KK, g2int MM,
+specpack(float *fld, g2int ndpts, g2int JJ, g2int KK, g2intu MM,
          g2int *idrstmpl, unsigned char *cpack, g2int *lcpack)
 {
 

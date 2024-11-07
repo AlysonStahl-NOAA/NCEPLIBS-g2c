@@ -108,7 +108,8 @@ g2_addfield(unsigned char *cgrib, g2int ipdsnum, g2int *ipdstmpl,
     g2int ilen, isecnum, i, nbits, temp, left;
     g2int ibmprev, j, lcpack, ioctet, newlen, ndpts;
     g2int lensec4, lensec5, lensec6, lensec7;
-    g2int issec3 = 0, isprevbmap = 0, lpos3 = 0, JJ, KK, MM;
+    g2int issec3 = 0, isprevbmap = 0, lpos3 = 0, JJ, KK;
+    g2intu MM;
     g2int *coordieee;
     float *pfld;
     gtemplate *mappds, *mapdrs;
