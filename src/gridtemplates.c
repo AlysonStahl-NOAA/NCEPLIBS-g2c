@@ -119,7 +119,11 @@ static const struct gridtemplate templatesgrid[G2C_MAX_GDS_TEMPLATE] =
         /* 3.1100: Hovmoller Diagram Grid */
         {1100, 28, 0, {1, 1, 4, 1, 4, 1, 4, 4, 4, 4, -4, 4, 1, -4, 4, 1, 4, 1, -4, 1, 1, -4, 2, 1, 1, 1, 1, 1}},
         /* 3.1200: Time Section Grid */
-        {1200, 16, 1, {4, 1, -4, 1, 1, -4, 2, 1, 1, 1, 1, 1, 2, 1, 1, 2}}};
+        {1200, 16, 1, {4, 1, -4, 1, 1, -4, 2, 1, 1, 1, 1, 1, 2, 1, 1, 2}}
+
+        /* 3.13: Mercator with modelling subdomains definition */
+        {13, 23, 0, {1, 1, 4, 1, 4, 1, 4, 4, 4, -4, 4, 1, -4, -4, 4, 1, 4, 4, 4, 4, 4, 4, 4}}
+    };
 
 /**
  * This function returns the index of specified Grid Definition
