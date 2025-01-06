@@ -122,7 +122,7 @@ static const struct gridtemplate templatesgrid[G2C_MAX_GDS_TEMPLATE] =
         {1200, 16, 1, {4, 1, -4, 1, 1, -4, 2, 1, 1, 1, 1, 1, 2, 1, 1, 2}},
 
         /* 3.13: Mercator with modelling subdomains definition */
-        {13, 23, 0, {1, 1, 4, 1, 4, 1, 4, 4, 4, -4, 4, 1, -4, -4, 4, 1, 4, 4, 4, 4, 4, 4, 4}}
+        {13, 23, 0, {1, 1, 4, 1, 4, 1, 4, 4, 4, -4, 4, 1, -4, -4, 4, 1, 4, 4, 4, 4, 4, 4, 4}},
         /* 3.23: Polar stereographic projection with modelling subdomains definition */
         {23, 22, 0, {1, 1, 4, 1, 4, 1, 4, 4, 4, -4, 4, 1, -4, 4, 4, 4, 1, 1, 4, 4, 4, 4}},
     };
