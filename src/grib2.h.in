@@ -289,10 +289,10 @@ g2int g2_gribend(unsigned char *cgrib);
 #define G2C_SECTION1_LEN 13 /**< Length of section 1 array. */
 
 /* Constants to help with templates. */
-#define G2C_MAX_GDS_TEMPLATE 31        /**< Maximum number of grid templates. */
+#define G2C_MAX_GDS_TEMPLATE 38        /**< Maximum number of grid templates. */
 #define G2C_MAX_GDS_TEMPLATE_MAPLEN 28 /**< Maximum grid template map length. */
-#define G2C_MAX_PDS_TEMPLATE 47        /**< Maximum number of PDS templates. */
-#define G2C_MAX_PDS_TEMPLATE_MAPLEN 45 /**< Maximum template map length. */
+#define G2C_MAX_PDS_TEMPLATE 102        /**< Maximum number of PDS templates. */
+#define G2C_MAX_PDS_TEMPLATE_MAPLEN 50 /**< Maximum template map length. */
 #define G2C_MAX_DRS_TEMPLATE 10        /**< Maximum number of DRS templates. */
 #define G2C_MAX_DRS_TEMPLATE_MAPLEN 18 /**< Maximum DRS template map length. */
 
@@ -318,6 +318,8 @@ int g2c_inq_prod(int g2cid, int msg_num, int prod_num, int *pds_template_len,
                  int *drs_template_len, long long int *drs_template);
 int g2c_inq_dim(int g2cid, int msg_num, int prod_num, int dim_num, size_t *len,
                 char *name, float *val);
+int g2c_inq_dim_info(int g2cid, int msg_num, int prod_num, int dim_num, size_t *len,
+		     char *name);
 
 /* Getting data. */
 int g2c_get_prod(int g2cid, int msg_num, int prod_num, int *num_data_points,
@@ -423,6 +425,8 @@ int g2c_param_all(int param_idx, int *g1ver, int *g1val, int *g2disc, int *g2cat
 
 #define G2C_JASPER_MAX_MEM @JASPER_MAX_MEM@ /**< Maximum size for the Jasper memory buffer. */
 
+#define G2C_PNG_WIDTH_MAX @PNG_WIDTH_MAX@ /**< Maximum width of PNG grid */
+#define G2C_PNG_HEIGHT_MAX @PNG_HEIGHT_MAX@ /**< Maximum height of PNG grid */
 /* Error codes for G2 API. */
 #define G2_NO_ERROR 0             /**< Function succeeded. */
 #define G2_CREATE_GRIB_VERSION -1 /**< Wrong GRIB version for g2_create(), must be 2. */
