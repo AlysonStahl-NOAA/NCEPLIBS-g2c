@@ -430,7 +430,7 @@ g2c_get_grid_template(int grid_template_num, int *maplen, int *map, int *needext
  * @author Alyson Stahl @date 01/21/25
  */
 int
-g2c_get_gdt_len(int pds_template_num, int *maplen)
+g2c_get_gdt_len(int grid_template_num, int *maplen)
 {
     int j;
 
