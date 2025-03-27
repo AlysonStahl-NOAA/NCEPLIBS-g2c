@@ -293,7 +293,7 @@ g2int g2_gribend(unsigned char *cgrib);
 #define G2C_MAX_GDS_TEMPLATE_MAPLEN 28 /**< Maximum grid template map length. */
 #define G2C_MAX_PDS_TEMPLATE 102        /**< Maximum number of PDS templates. */
 #define G2C_MAX_PDS_TEMPLATE_MAPLEN 50 /**< Maximum template map length. */
-#define G2C_MAX_DRS_TEMPLATE 10        /**< Maximum number of DRS templates. */
+#define G2C_MAX_DRS_TEMPLATE 11        /**< Maximum number of DRS templates. */
 #define G2C_MAX_DRS_TEMPLATE_MAPLEN 18 /**< Maximum DRS template map length. */
 
 /* File handling functions. */
@@ -331,7 +331,9 @@ int g2c_get_grid_template_extension(int grid_template_num, int *g2c_template,
                                     int *extlen, int *ext);
 int g2c_get_pds_template_extension(int pds_template_num, int *g2c_template,
                                    int *extlen, int *ext);
+int g2c_get_gdt_len(int grid_template_num, int *maplen);
 int g2c_get_pds_template(int pds_template_num, int *maplen, int *map, int *needext);
+int g2c_get_pdt_len(int pds_template_num, int *maplen);
 int g2c_get_drs_template(int drs_template_num, int *maplen, int *map, int *needext);
 
 /* Internal functions. */
